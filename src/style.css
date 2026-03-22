@@ -104,7 +104,7 @@ select option {
   /* No-Line rule */
   .section-divider {
     @apply h-px w-full bg-gradient-to-r from-transparent via-primary-container/40 to-transparent my-20;
-    @apply shadow-[0_0_15px_rgba(79, 121, 66, 0.3)];
+    @apply shadow-[0_0_15px_rgba(79,121,66,0.3)];
   }
   .hero-slide {
     will-change: opacity;
