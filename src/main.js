@@ -135,3 +135,26 @@ window.addEventListener('load', () => {
     }
 });
 
+// Mobile Menu Logic
+const mobileMenuOpenBtn = document.getElementById('mobile-menu-open');
+const mobileMenuCloseBtn = document.getElementById('mobile-menu-close');
+const mobileMenuDrawer = document.getElementById('mobile-menu-drawer');
+
+if (mobileMenuOpenBtn && mobileMenuCloseBtn && mobileMenuDrawer) {
+    mobileMenuOpenBtn.addEventListener('click', () => {
+        mobileMenuDrawer.classList.remove('translate-x-full');
+        document.body.style.overflow = 'hidden';
+    });
+    mobileMenuCloseBtn.addEventListener('click', () => {
+        mobileMenuDrawer.classList.add('translate-x-full');
+        document.body.style.overflow = '';
+    });
+    
+    // Close on link click
+    mobileMenuDrawer.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenuDrawer.classList.add('translate-x-full');
+            document.body.style.overflow = '';
+        });
+    });
+}
