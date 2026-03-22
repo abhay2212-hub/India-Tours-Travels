@@ -124,3 +124,14 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('India Tours and Travels site initialized.');
 });
 
+// Hide loading screen on window load
+window.addEventListener('load', () => {
+    const loader = document.getElementById('loading-screen');
+    if (loader) {
+        loader.classList.add('opacity-0');
+        setTimeout(() => {
+            loader.style.display = 'none';
+        }, 500);
+    }
+});
+
