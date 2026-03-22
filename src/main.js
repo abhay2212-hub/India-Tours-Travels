@@ -1,4 +1,5 @@
 // Micro-animations and interaction logic for India Tours and Travels
+import './style.css';
 
 document.addEventListener('DOMContentLoaded', () => {
     // Smooth scroll for anchor links
