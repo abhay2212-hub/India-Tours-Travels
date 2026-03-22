@@ -7,22 +7,6 @@
   font-style: normal;
 }
 
-:root {
-  color-scheme: dark;
-}
-
-select {
-  color-scheme: dark;
-  background-color: transparent;
-}
-
-select option {
-  background-color: #1a1a1a;
-  color: white;
-  padding: 12px;
-}
-
-
 @theme {
   --color-primary: #4F7942;
   --color-primary-fixed: #BDD1B3;
@@ -59,6 +43,23 @@ select option {
 
   --radius-xl: 1.5rem;
   --radius-2xl: 2rem;
+}
+
+:root, html {
+  color-scheme: dark;
+}
+
+select {
+  color-scheme: dark;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  padding: 4px 8px;
+}
+
+select option {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 12px;
 }
 
 @layer base {
