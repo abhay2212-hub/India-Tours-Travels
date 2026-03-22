@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Voyager | Curated Indian Odysseys</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "error-container": "#93000a",
+                        "surface": "#131313",
+                        "primary-fixed-dim": "#ffb5a0",
+                        "on-secondary": "#3c2f00",
+                        "outline": "#ab8980",
+                        "inverse-on-surface": "#313030",
+                        "surface-tint": "#ffb5a0",
+                        "primary": "#ffb5a0",
+                        "surface-container-high": "#2a2a2a",
+                        "on-secondary-fixed": "#241a00",
+                        "tertiary-container": "#af8c47",
+                        "surface-variant": "#353534",
+                        "surface-container-highest": "#353534",
+                        "on-surface": "#e5e2e1",
+                        "on-primary-fixed": "#3b0900",
+                        "primary-fixed": "#ffdbd1",
+                        "on-primary": "#5f1500",
+                        "surface-container-lowest": "#0e0e0e",
+                        "surface-container": "#201f1f",
+                        "tertiary": "#e9c176",
+                        "on-tertiary-fixed": "#261900",
+                        "secondary-fixed": "#ffe088",
+                        "on-primary-fixed-variant": "#862200",
+                        "secondary": "#e9c349",
+                        "on-secondary-container": "#342800",
+                        "on-tertiary": "#412d00",
+                        "on-error-container": "#ffdad6",
+                        "surface-container-low": "#1c1b1b",
+                        "outline-variant": "#5b4039",
+                        "on-tertiary-fixed-variant": "#5d4201",
+                        "inverse-primary": "#b02f00",
+                        "secondary-fixed-dim": "#e9c349",
+                        "secondary-container": "#af8d11",
+                        "on-error": "#690005",
+                        "on-surface-variant": "#e4beb4",
+                        "on-secondary-fixed-variant": "#574500",
+                        "on-background": "#e5e2e1",
+                        "inverse-surface": "#e5e2e1",
+                        "surface-dim": "#131313",
+                        "on-primary-container": "#541200",
+                        "on-tertiary-container": "#392700",
+                        "tertiary-fixed": "#ffdea5",
+                        "surface-bright": "#393939",
+                        "background": "#131313",
+                        "tertiary-fixed-dim": "#e9c176",
+                        "primary-container": "#ff5722",
+                        "error": "#ffb4ab"
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glow-text-orange {
+            text-shadow: 0 0 15px rgba(255, 87, 34, 0.6);
+        }
+        .glow-text-gold {
+            text-shadow: 0 0 15px rgba(233, 195, 73, 0.5);
+        }
+        .glow-card {
+            box-shadow: 0 0 30px rgba(255, 181, 160, 0.08);
+        }
+        .glow-card:hover {
+            box-shadow: 0 0 40px rgba(255, 181, 160, 0.15);
+        }
+        .sunset-gradient {
+            background: linear-gradient(135deg, #ffb5a0 0%, #ff5722 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary/30">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-neutral-900/70 backdrop-blur-xl flex justify-between items-center px-8 h-20 shadow-[0px_10px_30px_rgba(0,0,0,0.5)]">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-orange-400 cursor-pointer">menu</span>
+<h1 class="font-serif text-2xl tracking-widest uppercase text-orange-500 italic tracking-tighter">VOYAGER</h1>
+</div>
+<div class="hidden md:flex gap-12">
+<a class="text-orange-400 font-bold font-label text-sm tracking-widest hover:text-orange-300 transition-colors duration-300" href="#">DISCOVER</a>
+<a class="text-neutral-400 font-label text-sm tracking-widest hover:text-orange-300 transition-colors duration-300" href="#">BOOKINGS</a>
+<a class="text-neutral-400 font-label text-sm tracking-widest hover:text-orange-300 transition-colors duration-300" href="#">WISHLIST</a>
+<a class="text-neutral-400 font-label text-sm tracking-widest hover:text-orange-300 transition-colors duration-300" href="#">PROFILE</a>
+</div>
+<div class="w-10 h-10 rounded-full overflow-hidden border border-outline-variant/30">
+<img class="w-full h-full object-cover" data-alt="Close up portrait of a luxury traveler" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFwKUly8wkSbcy-cChK8QOFNNrbuSbX2Tyl8zgYY6i7_JVZhwoP5t34xFt_3wGuXjymMjFiNMWUNpT9FndP0FXoT8qhIvcLD_pr3VeI695J2n006YwXeYxr_lJ7teRn7LS6Y5O6zewJQiV-uAd8XDfZLESTZAqPgGJ1FtcVBHP4RQXT5KefPIqVWK_82K7ZFdLNFsi88ft_2zFt2qLjnmilGYg3qDa6hln4gUQoMG9U172BeF41QaZt5o2o8kosfEk4MupVH2eS2LM"/>
+</div>
+</nav>
+<main class="pt-32 pb-40 px-6 md:px-16 max-w-7xl mx-auto">
+<!-- Hero Editorial Section -->
+<header class="mb-24">
+<span class="font-label text-secondary tracking-[0.4em] uppercase text-xs mb-4 block glow-text-gold">Velvet Meridian Edition</span>
+<h2 class="font-headline text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-8">
+                Curated <span class="italic font-normal text-primary glow-text-orange">Odysseys</span>
+</h2>
+<p class="font-body text-lg text-on-surface-variant max-w-2xl leading-relaxed">
+                Beyond the destination lies the soul of the journey. Explore our meticulously crafted travel experiences across the Indian heartland, where every moment is a signature of luxury.
+            </p>
+</header>
+<!-- Category Filtering -->
+<div class="flex flex-wrap gap-4 mb-16">
+<button class="px-8 py-3 rounded-full sunset-gradient text-on-primary font-label text-sm font-bold tracking-widest shadow-lg shadow-primary-container/20">
+                TOURS
+            </button>
+<button class="px-8 py-3 rounded-full bg-surface-container-high/50 backdrop-blur-md border border-outline-variant/15 text-on-surface font-label text-sm tracking-widest hover:bg-surface-container-highest transition-all">
+                HOTELS
+            </button>
+<button class="px-8 py-3 rounded-full bg-surface-container-high/50 backdrop-blur-md border border-outline-variant/15 text-on-surface font-label text-sm tracking-widest hover:bg-surface-container-highest transition-all">
+                RENTALS
+            </button>
+</div>
+<!-- Glowing Divider -->
+<div class="h-[1px] w-full bg-gradient-to-r from-transparent via-primary-container/40 to-transparent mb-20 shadow-[0_0_15px_rgba(255,87,34,0.3)]"></div>
+<!-- Featured Showcase: Bento-ish Grid -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-32">
+<!-- Large Showcase: Delhi -->
+<article class="md:col-span-8 group relative overflow-hidden rounded-[2rem] bg-surface-container-low glow-card">
+<div class="aspect-[16/9] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="The majestic Red Fort in Old Delhi during golden hour" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdI2p8h5mY7iHCL4kcTw51_zL89qJF9pTl5T5YJKcVqBpjl9PDxgO_-uh9bt40z60wpBIL2hQcmiUJdouO8_E_ua5Hm9AJgfIs7m7a8WqVufGprZ88WL76F8DRzUJ9Z3Ke21IRJWjo2oOLxXJ1Aq_H5OMCh7EYB7ZM5PHcaFIN6xZTQQLBdM3-8WlQ_gOzEKe1_0V32r0R7ETN06tYmovAePauwcQ072Ba67J7pFE-3Rd8VlIyO15aB39Qqt2_8wDc8Skd2EQthjbC"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent flex flex-col justify-end p-8 md:p-12">
+<div class="flex justify-between items-end">
+<div>
+<span class="text-secondary font-label text-xs tracking-[0.3em] uppercase mb-2 block">The Heritage Collection</span>
+<h3 class="font-headline text-3xl md:text-4xl font-bold text-on-surface mb-4">Old Delhi Imperial</h3>
+<p class="text-on-surface-variant max-w-md text-sm md:text-base mb-6">A private passage through the Mughal labyrinth, concluding with a sunset feast atop a hidden haveli.</p>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label text-xs text-on-surface tracking-widest">4.9 | CURATED BY VOYAGER</span>
+</div>
+</div>
+<button class="w-16 h-16 rounded-full sunset-gradient flex items-center justify-center text-on-primary shadow-2xl transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined">arrow_outward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Side Card: Agra -->
+<article class="md:col-span-4 group relative overflow-hidden rounded-[2rem] bg-surface-container-low glow-card">
+<div class="h-full overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="The Taj Mahal framed by stone arches at dawn" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdzLGMf7lPj83VGQ3lbXARNObWZ2XaaUTJe9p1lB7gfP017mM9TrrqQubtIXjoAbn0HY1U7301sRiuZ3HjirqTpEHQ4MG2wNoIos5wSan8dK84yaBNYQc3LwgyjyOO0zZbrFsPirwdC2E_Q0DKZYnHZdQ_d8taGApt-EcyATrzggGr1jWne7qjlNHeq-IteSYjwGebYlSHJpn0hf47dAVhTGmU1EZJDb7C7Tr-TKHv4u-m1ab3dTU-g6CrsOGePaWO1DG3CKmVBvlB"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/20 to-transparent flex flex-col justify-end p-8">
+<span class="text-secondary font-label text-xs tracking-[0.3em] uppercase mb-1">Architecture</span>
+<h3 class="font-headline text-2xl font-bold text-on-surface mb-2">The Taj Serenade</h3>
+<p class="text-on-surface-variant text-sm mb-4">Midnight private access.</p>
+<span class="text-primary font-bold tracking-widest text-lg">$1,200</span>
+</div>
+</article>
+</section>
+<!-- Secondary Catalog Grid -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 mb-24">
+<!-- Shimla -->
+<div class="flex flex-col gap-6">
+<div class="relative aspect-[4/5] rounded-[2rem] overflow-hidden glow-card">
+<img class="w-full h-full object-cover" data-alt="Victorian era building in Shimla surrounded by pine trees" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdi4GCKl_aL3AGL45pgrcR8gQyuIwJ3PzEGR5A51oKYxjQgKnAZdZVWG1ojkJfo2-z0s_zh_btmBAzc6MRGbg2PqlME_B_PlRPrcR7qVR1YLR7xeS8rZEnT4xci8KiVRpvBdHWrckJW6MKt_UBPGoBTqN8oosvH-92DuCcyZiGYOUUUbxYqBLgTiX8FVOjw95_HLk_BR0Arin4M_wX8FgRBZzOiKgIy_5pOvvUj6y7WVh_3ifm2k6T6DBuPsmWk1s5Izy1KQLUdlmd"/>
+<div class="absolute top-6 right-6 px-4 py-2 bg-neutral-900/80 backdrop-blur-xl rounded-full border border-outline-variant/15">
+<span class="text-secondary text-xs font-bold tracking-widest uppercase">SHIMLA</span>
+</div>
+</div>
+<div>
+<h4 class="font-headline text-2xl font-bold text-on-surface mb-2">Shimla Hill Estate</h4>
+<p class="text-on-surface-variant text-sm mb-4 leading-relaxed">Colonial charm meets Himalayan grandeur in this exclusive highland retreat.</p>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant font-label text-xs tracking-widest">7 DAYS JOURNEY</span>
+<span class="text-secondary font-bold">$2,450</span>
+</div>
+</div>
+</div>
+<!-- Dehradun -->
+<div class="flex flex-col gap-6">
+<div class="relative aspect-[4/5] rounded-[2rem] overflow-hidden glow-card">
+<img class="w-full h-full object-cover" data-alt="Aerial view of lush green Dehradun valley" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvH7XUDxqgMug5aJ7KfDImdWhGDi0DNRTpblWszjWLil0Z6hke2y_hh63Jtxv7s_SZ1K5DYJ2U4-49F2K2NHoSpCKQd9oYcQKtDuv19RqHT9xR9O9Zw_-xKXmp0PhJibQp80DHIXZrOE5_Cmql9IlpeTIB6zGFO_HEpx0N33_0hfzQOTm8XrFUNFDq6DSmiVzGzrqm1o2lXrNhSRRFHvTJV5Lgr_vFHmwvyo-a3lg2VHl4PBIJnzjVNkuqCRiDbU8yUwQZDjKw-SSu"/>
+<div class="absolute top-6 right-6 px-4 py-2 bg-neutral-900/80 backdrop-blur-xl rounded-full border border-outline-variant/15">
+<span class="text-secondary text-xs font-bold tracking-widest uppercase">DEHRADUN</span>
+</div>
+</div>
+<div>
+<h4 class="font-headline text-2xl font-bold text-on-surface mb-2">Valley Sanctuary</h4>
+<p class="text-on-surface-variant text-sm mb-4 leading-relaxed">A wellness-first escape deep in the Doon valley, featuring private spas.</p>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant font-label text-xs tracking-widest">5 DAYS JOURNEY</span>
+<span class="text-secondary font-bold">$1,800</span>
+</div>
+</div>
+</div>
+<!-- Mussoorie -->
+<div class="flex flex-col gap-6">
+<div class="relative aspect-[4/5] rounded-[2rem] overflow-hidden glow-card">
+<img class="w-full h-full object-cover" data-alt="Mussoorie hills under a soft misty cloud cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAd6J0F55u6Pv9zvdafwsNONeKkTQC5rFeffYc197dmWmj3frn2Fz1dT7fogOrkksMwg2sqX9nCzEmDDTXl5K1yUaP561_w7xAaONDGMY3gwlw5oFqxisbInqgcDUYKuTBwSdzSJMZXjsqE2ynkNVDZOv4H_6W1YAjXtAQrYCQjFCQoQ-B4oTUrWMWappSzxHfOPpR-S_Q2D02bjGKdSX8S7YC77r43Ygwe7k8W34z6NNfWTL7dLc9lFZ_FLzr9-owO3Bn2r-wK--f"/>
+<div class="absolute top-6 right-6 px-4 py-2 bg-neutral-900/80 backdrop-blur-xl rounded-full border border-outline-variant/15">
+<span class="text-secondary text-xs font-bold tracking-widest uppercase">MUSSOORIE</span>
+</div>
+</div>
+<div>
+<h4 class="font-headline text-2xl font-bold text-on-surface mb-2">Cloud End Manor</h4>
+<p class="text-on-surface-variant text-sm mb-4 leading-relaxed">Perched on the edge of the world, where the mist meets luxury.</p>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant font-label text-xs tracking-widest">4 DAYS JOURNEY</span>
+<span class="text-secondary font-bold">$1,550</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Reveal Button -->
+<div class="flex justify-center mt-12">
+<button class="group flex items-center gap-4 px-10 py-5 rounded-full border border-primary/40 bg-surface text-primary font-label text-sm font-bold tracking-[0.2em] transition-all hover:bg-primary hover:text-on-primary hover:shadow-[0_0_30px_rgba(255,181,160,0.4)]">
+                REVEAL MORE JOURNEYS
+                <span class="material-symbols-outlined transition-transform group-hover:translate-x-2">trending_flat</span>
+</button>
+</div>
+</main>
+<!-- Bottom Navigation Bar (Mobile) -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 bg-neutral-900/80 backdrop-blur-2xl rounded-t-[2rem] flex justify-around items-center h-24 pb-4 shadow-[0_-10px_40px_rgba(255,87,34,0.1)]">
+<div class="flex flex-col items-center justify-center text-orange-500 drop-shadow-[0_0_8px_rgba(255,181,160,0.8)]">
+<span class="material-symbols-outlined mb-1">explore</span>
+<span class="font-sans text-[10px] uppercase tracking-widest font-bold">Discover</span>
+</div>
+<div class="flex flex-col items-center justify-center text-neutral-500 hover:text-yellow-400 transition-all">
+<span class="material-symbols-outlined mb-1">event_available</span>
+<span class="font-sans text-[10px] uppercase tracking-widest font-bold">Bookings</span>
+</div>
+<div class="flex flex-col items-center justify-center text-neutral-500 hover:text-yellow-400 transition-all">
+<span class="material-symbols-outlined mb-1">auto_awesome</span>
+<span class="font-sans text-[10px] uppercase tracking-widest font-bold">Wishlist</span>
+</div>
+<div class="flex flex-col items-center justify-center text-neutral-500 hover:text-yellow-400 transition-all">
+<span class="material-symbols-outlined mb-1">person</span>
+<span class="font-sans text-[10px] uppercase tracking-widest font-bold">Profile</span>
+</div>
+</nav>
+</body></html>

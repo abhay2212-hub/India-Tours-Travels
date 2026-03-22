@@ -1,0 +1,189 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Medicinal Compound';
+  src: url('/medicinal_compound/Medicinal-Compound.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}html {
+  color-scheme: dark;
+}
+
+select {
+  color-scheme: dark;
+  background-color: transparent;
+}
+
+select option {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 12px;
+}
+
+
+@theme {
+  --color-primary: #4F7942;
+  --color-primary-fixed: #BDD1B3;
+  --color-primary-container: #334D2A;
+  --color-secondary: #e9c349;
+  --color-secondary-fixed: #ffe088;
+  --color-secondary-container: #af8d11;
+  --color-surface-container-highest: #353534;
+  --color-surface-container-high: #2a2a2a;
+  --color-surface-container: #201f1f;
+  --color-surface-container-low: #1c1b1b;
+  --color-surface-container-lowest: #0e0e0e;
+  --color-surface-bright: #393939;
+  --color-surface-dim: #131313;
+  --color-background: #131313;
+  --color-surface: #131313;
+  --color-on-surface: #e5e2e1;
+  --color-on-surface-variant: #e4beb4;
+  --color-on-primary-fixed: #3b0900;
+  --color-on-primary-container: #541200;
+  --color-on-primary: #5f1500;
+  --color-on-background: #e5e2e1;
+  --color-outline: #ab8980;
+  --color-outline-variant: #5b4039;
+  --color-tertiary: #e9c176;
+  --color-tertiary-fixed: #ffdea5;
+  --color-tertiary-container: #af8c47;
+  --color-error: #ffb4ab;
+  --color-error-container: #93000a;
+
+  --font-headline: "Medicinal Compound", "Noto Serif", serif;
+  --font-body: "Medicinal Compound", "Manrope", sans-serif;
+  --font-label: "Medicinal Compound", "Manrope", sans-serif;
+
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-body selection:bg-primary/30;
+    min-height: 100vh;
+    caret-color: transparent;
+  }
+
+  input, textarea, [contenteditable="true"] {
+    caret-color: auto;
+  }
+}
+
+@layer components {
+  .glass-card {
+    background: rgba(32, 31, 31, 0.7);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(91, 64, 57, 0.15);
+  }
+  
+  .glass-nav {
+    background: rgba(10, 10, 10, 0.8);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  }
+
+  .sunset-gradient {
+    @apply bg-gradient-to-r from-primary to-primary-container;
+  }
+
+  .glow-text-orange {
+    text-shadow: 0 0 15px rgba(79, 121, 66, 0.6);
+  }
+
+  .glow-text-gold {
+    text-shadow: 0 0 15px rgba(233, 195, 73, 0.5);
+  }
+
+  /* No-Line rule */
+  .section-divider {
+    @apply h-px w-full bg-gradient-to-r from-transparent via-primary-container/40 to-transparent my-20;
+    @apply shadow-[0_0_15px_rgba(79, 121, 66, 0.3)];
+  }
+  .hero-slide {
+    will-change: opacity;
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
+
+[data-weight="fill"] {
+  font-variation-settings: 'FILL' 1;
+}
+
+h1, h2, h3, .serif {
+  @apply font-headline;
+}
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out forwards;
+}
+
+input::placeholder {
+  @apply text-on-surface-variant/40 italic;
+}
+
+/* Contact Modal Styles */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.82);
+    backdrop-filter: blur(12px);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-content {
+    background: #1a1a1a;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 2.5rem;
+    padding: 3.5rem 2rem;
+    max-width: 450px;
+    width: 90%;
+    transform: scale(0.9) translateY(40px);
+    transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    text-align: center;
+    box-shadow: 0 40px 100px rgba(0,0,0,0.8);
+}
+
+.modal-overlay.active .modal-content {
+    transform: scale(1) translateY(0);
+}
+
+.package-card {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.package-card:hover {
+    transform: translateY(-8px);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.5s ease forwards;
+}

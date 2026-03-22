@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curated Tours | India Tours & Travels</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Manrope:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body class="bg-background text-on-surface selection:bg-primary/30">
+
+    <!-- Navbar (Same as Index) -->
+    <nav class="fixed top-0 w-full z-50 glass-nav">
+        <div class="flex justify-between items-center px-6 md:px-16 py-3 md:py-4 w-full max-w-[1920px] mx-auto">
+            <a href="/" class="text-xl md:text-2xl font-headline italic text-primary tracking-wider glow-text-orange uppercase">
+                India Tours & Travels
+            </a>
+            <div class="hidden lg:flex items-center gap-12">
+                <a href="/" class="text-neutral-400 hover:text-primary transition-all font-label uppercase tracking-widest text-xs">Home</a>
+                <a href="/tours.html" class="text-primary transition-all font-label uppercase tracking-widest text-xs border-b border-primary">Tours</a>
+                <a href="/hotels.html" class="text-neutral-400 hover:text-primary transition-all font-label uppercase tracking-widest text-xs">Hotels</a>
+                <a href="/rentals.html" class="text-neutral-400 hover:text-primary transition-all font-label uppercase tracking-widest text-xs">Rentals</a>
+                <a href="/story.html" class="text-neutral-400 hover:text-primary transition-all font-label uppercase tracking-widest text-xs">Our Story</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-40">
+        <section class="px-6 md:px-16 pt-24 pb-12 max-w-[1920px] mx-auto">
+            <span class="font-label text-secondary tracking-[0.4em] uppercase text-xs mb-4 block glow-text-gold">The 2026 Catalog</span>
+            <h1 class="text-5xl md:text-8xl font-headline italic tracking-tight text-on-background mb-8 leading-tight">
+                Curated <span class="text-primary glow-text-orange italic">Odysseys</span>
+            </h1>
+            <p class="max-w-3xl text-on-surface-variant font-body text-lg leading-relaxed opacity-80 mb-16">
+                From the ivory symmetry of the Taj to the hidden pine trails of the Himalayas. Explore our signature collection of soul-stirring discovery.
+            </p>
+
+            <!-- Advanced Filter Bar -->
+            <div class="glass-card rounded-2xl p-4 flex flex-wrap gap-8 items-center mb-24 border border-outline-variant/10">
+                <div class="flex flex-col gap-1">
+                    <span class="text-[10px] text-secondary tracking-widest uppercase font-bold">Region</span>
+                    <select class="bg-transparent text-on-surface font-headline italic outline-none cursor-pointer">
+                        <option>All Regions</option>
+                        <option>Northern Hills</option>
+                        <option>Heritage Plains</option>
+                        <option>Spiritual Ghats</option>
+                    </select>
+                </div>
+                <div class="h-10 w-px bg-outline-variant/20"></div>
+                <div class="flex flex-col gap-1">
+                    <span class="text-[10px] text-secondary tracking-widest uppercase font-bold">Duration</span>
+                    <select class="bg-transparent text-on-surface font-headline italic outline-none cursor-pointer">
+                        <option>Any Duration</option>
+                        <option>2-3 Days</option>
+                        <option>5+ Days</option>
+                    </select>
+                </div>
+                <div class="ml-auto flex items-center gap-4">
+                    <span class="text-xs font-label text-on-surface-variant/40 uppercase tracking-widest italic">Showing 7 Exclusive Journeys</span>
+                </div>
+            </div>
+
+            <!-- Tours Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
+                <!-- Repeated Tour Cards with slightly more Detail -->
+                <!-- Delhi -->
+                <article class="group relative flex flex-col gap-8 package-card">
+                    <div class="relative aspect-[3/4] overflow-hidden rounded-[2rem] shadow-2xl">
+                        <img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBedgXymgZ2IVC8dtrfAU6OTm6mvyX1PuxBVBRusEBYYKClsBqzgZr8doxMrmYxb-sOUNNZkwezkm5943b8Rk0wxd28l0Z-ooN1APEAHF1bRyp8wBaPbMwFVu6zQX9TJnoHOmzAeWGI8WvMnZZeSDnfbFrOf798IBuFcvpn4J2pTJQqukubuv-wujuNCQL3hw_D4_oaW14CDYygpK_uhwJVBMp_ewGOVztj9eFxZp6_Hb5Bq8IYxug7BVPBsqI-CcxUBJPxGzIInMW_">
+                        <div class="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent opacity-80"></div>
+                        <div class="absolute bottom-8 left-8 right-8">
+                            <span class="text-secondary font-label text-[10px] tracking-[0.3em] uppercase mb-2 block">Heritage Legacy</span>
+                            <h3 class="text-3xl font-headline italic mb-4">Old Delhi Imperial</h3>
+                            <div class="flex items-center justify-between border-t border-white/10 pt-4">
+                                <span class="text-sm font-label tracking-widest">₹25,000 / Person</span>
+                                <span class="material-symbols-outlined text-primary">arrow_forward</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Agra -->
+                <article class="group relative flex flex-col gap-8 package-card">
+                    <div class="relative aspect-[3/4] overflow-hidden rounded-[2rem] shadow-2xl">
+                        <img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBur1SRtDEs3zhOtjKzcxEPIsHIjPe3DiygOIUsvyWTJ3AA0PvgJZBKi7AwHuXjPlW1HwukdTEvaGowePS7OYQVGA5KQD3f5qU71ntaiN_esgdZ8YWbxwbNG1LDBsI8GzVmvytSCa0q_nEuqg--cRbKaLkD37uELz16ugENAR-s-wjCaMEGLMx6lYjc5Fx_O_aK14Yz8VwUQdTKZ5HKoJhh2oV2nUbTkVC_wkC5ak7C4RQZpRxvb7grAi7cPodTR-ZwDxDyNYAAXMuL">
+                        <div class="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent opacity-80"></div>
+                        <div class="absolute bottom-8 left-8 right-8">
+                            <span class="text-secondary font-label text-[10px] tracking-[0.3em] uppercase mb-2 block">Iconic Ivory</span>
+                            <h3 class="text-3xl font-headline italic mb-4">The Taj Serenade</h3>
+                            <div class="flex items-center justify-between border-t border-white/10 pt-4">
+                                <span class="text-sm font-label tracking-widest">₹18,500 / Person</span>
+                                <span class="material-symbols-outlined text-primary">arrow_forward</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Shimla -->
+                <article class="group relative flex flex-col gap-8 package-card">
+                    <div class="relative aspect-[3/4] overflow-hidden rounded-[2rem] shadow-2xl">
+                        <img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALe4ci7BGr6CW4GeQilxRlIwwNIgQo7hzACv8gL2sDu9Stw7_AkQuICMf1LpNmKD0bb5FZvgxD42ZSdCHuYQfF3X2MlgKV2W5wKMBWNvkrv-cCi4ouuav_znaJj6KklSbjo33T_K9iJzJBjAhATxdw_cYyPDGbRoFj_ezvt_59mqfPclg1okgD_Wg4B1ZaI9ujpD0gLMqvVVXYPr3t1LRwsObPY7kNSz_u83JJCRrz-nsNPqVXxIBlnZzyxJrs-0DV9BZuXs0O33oq">
+                        <div class="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent opacity-80"></div>
+                        <div class="absolute bottom-8 left-8 right-8">
+                            <span class="text-secondary font-label text-[10px] tracking-[0.3em] uppercase mb-2 block">Colonial Hills</span>
+                            <h3 class="text-3xl font-headline italic mb-4">Shimla Hill Estate</h3>
+                            <div class="flex items-center justify-between border-t border-white/10 pt-4">
+                                <span class="text-sm font-label tracking-widest">₹45,000 / Person</span>
+                                <span class="material-symbols-outlined text-primary">arrow_forward</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Haridwar -->
+                <article class="group relative flex flex-col gap-8 package-card">
+                    <div class="relative aspect-[3/4] overflow-hidden rounded-[2rem] shadow-2xl">
+                        <img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="./public/images/haridwar.png">
+                        <div class="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent opacity-80"></div>
+                        <div class="absolute bottom-8 left-8 right-8">
+                            <span class="text-secondary font-label text-[10px] tracking-[0.3em] uppercase mb-2 block">Ganges Spirituality</span>
+                            <h3 class="text-3xl font-headline italic mb-4">Ghats of Eternity</h3>
+                            <div class="flex items-center justify-between border-t border-white/10 pt-4">
+                                <span class="text-sm font-label tracking-widest">₹12,000 / Person</span>
+                                <span class="material-symbols-outlined text-primary">arrow_forward</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Rishikesh -->
+                <article class="group relative flex flex-col gap-8 package-card">
+                    <div class="relative aspect-[3/4] overflow-hidden rounded-[2rem] shadow-2xl">
+                        <img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="./public/images/rishikesh.png">
+                        <div class="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent opacity-80"></div>
+                        <div class="absolute bottom-8 left-8 right-8">
+                            <span class="text-secondary font-label text-[10px] tracking-[0.3em] uppercase mb-2 block">Yoga Capital</span>
+                            <h3 class="text-3xl font-headline italic mb-4">Beatles & Brahmaputra</h3>
+                            <div class="flex items-center justify-between border-t border-white/10 pt-4">
+                                <span class="text-sm font-label tracking-widest">₹28,000 / Person</span>
+                                <span class="material-symbols-outlined text-primary">arrow_forward</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Same as Index) -->
+    <footer class="w-full pt-32 pb-16 bg-neutral-950 border-t border-outline-variant/10">
+        <div class="flex flex-col items-center justify-center text-center px-6 md:px-24">
+            <div class="font-headline text-3xl italic text-primary mb-8 glow-text-orange">India Tours & Travels</div>
+            <div class="w-full max-w-4xl mb-16 rounded-3xl overflow-hidden shadow-2xl border border-outline-variant/20 h-64">
+                <iframe src="https://www.google.com/maps?q=India+Tour+and+Travels+Karol+Bagh+New+Delhi&output=embed" 
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="flex flex-wrap justify-center gap-8 md:gap-12 mb-16">
+                <a href="/" class="font-label text-[10px] tracking-[0.2em] uppercase text-neutral-500 hover:text-primary transition-all">Home</a>
+                <a href="/tours.html" class="font-label text-[10px] tracking-[0.2em] uppercase text-neutral-500 hover:text-primary transition-all">Tours</a>
+                <a href="/hotels.html" class="font-label text-[10px] tracking-[0.2em] uppercase text-neutral-500 hover:text-primary transition-all">Hotels</a>
+                <a href="/rentals.html" class="font-label text-[10px] tracking-[0.2em] uppercase text-neutral-500 hover:text-primary transition-all">Rentals</a>
+            </div>
+            <div class="text-neutral-400 font-label text-[10px] tracking-[0.2em] uppercase max-w-xl border-t border-neutral-800/50 pt-12 leading-relaxed">
+                © 2026 INDIA TOURS AND TRAVELS. <br>
+                <span class="text-secondary opacity-90">27, Shastri Market, Gurudwara Rd, Block 25A, Naiwala, Karol Bagh, New Delhi, Delhi, 110005.</span> <br>
+                <a href="tel:09811443302" class="text-primary mt-6 inline-block text-lg hover:text-secondary transition-all font-headline italic tracking-widest">
+                    <span class="text-[10px] font-label not-italic uppercase tracking-[0.4em] text-neutral-500 mr-2">Enquiries:</span>
+                    09811443302
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="text-secondary font-label text-[10px] tracking-[0.4em] uppercase mb-4 block">Concierge Discovery</span>
+            <h2 class="text-4xl font-headline italic text-on-surface mb-2">Engage with India</h2>
+            <p class="text-on-surface-variant font-body text-sm mb-12 opacity-70">Connect with our private concierge to tailor your signature odyssey.</p>
+            
+            <div class="flex flex-col gap-4">
+                <a href="tel:09811443302" class="w-full py-5 bg-primary text-on-primary rounded-2xl font-label text-sm tracking-widest uppercase font-bold flex items-center justify-center gap-3 hover:sunset-gradient transition-all shadow-xl">
+                    <span class="material-symbols-outlined">call</span>
+                    Call Now
+                </a>
+                <a href="https://wa.me/919811443302" target="_blank" class="w-full py-5 bg-[#25D366] text-white rounded-2xl font-label text-sm tracking-widest uppercase font-bold flex items-center justify-center gap-3 hover:bg-[#128C7E] transition-all shadow-xl">
+                    <svg class="w-5 h-5 fill-white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                    WhatsApp
+                </a>
+            </div>
+            
+            <button id="close-modal" class="mt-8 text-neutral-500 font-label text-[10px] tracking-widest uppercase hover:text-primary transition-all">Dismiss</button>
+        </div>
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
+</body>
+</html>
