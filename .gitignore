@@ -29,3 +29,4 @@ tmp/
 # Don't ignore images in public if they are required
 !public/images/*
 !public/medicinal_compound/*
+.vercel

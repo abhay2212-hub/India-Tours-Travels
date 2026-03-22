@@ -5,7 +5,9 @@
   src: url('/medicinal_compound/Medicinal-Compound.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
-}html {
+}
+
+:root {
   color-scheme: dark;
 }
 
